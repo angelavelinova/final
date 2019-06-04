@@ -1,0 +1,135 @@
+
+<!doctype html>
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title> Rent a bike </title>
+	<style>
+		body{
+			color: black;
+			background-color: #FFFFFF;
+			font-family: verdana;
+			width: 1000px;
+			font-size:15px;
+			margin:auto;
+			position:relative;
+		}
+		.image1{
+			margin-left:200px;	 
+		}
+		.image2{
+			margin-left:-100px;	 
+			margin-top:-20px;	
+		}
+		<!--.image3{
+			margin-left:1050px;	 
+			margin-top:-100px;	
+		}-->
+		.map1{
+			margin-left:200px;	 
+		}
+		.smallLetters1{
+			font-size: small;
+		}
+		#header{
+			background-color: #557A95;
+			margin: 10px;
+			height:90px;
+			border-radius: 5px;
+		}
+		#gif_area{
+			margin: 10px;
+			height:20px;
+			margin-left:200px;
+			padding: 5px;
+
+		}
+		#navbar ul{
+			padding: 5px;
+			list-style-type: none;
+			text-align:center;
+			background-color:black;
+			margin: 10px;
+			height:20px;
+			border-radius: 5px;
+		}
+		#navbar ul li{
+			display: inline;
+		}
+		#navbar ul li a{
+			text-decoration: none;
+			padding: .2em 1em;
+			color: white;
+			background-color: black;
+		}
+		#navbar ul li a:hover{
+			color: black;
+			background-color: white;
+		}
+		.main{
+			background-color: #CAD3D7;
+			margin-top: 100px;
+			margin-left: 10px;
+			margin-right: 10px;
+			border-radius: 5px;
+			padding: 20px;
+		}
+		h1{
+			font-size: 18pt;
+		}
+		h3{
+			color: #e5e4d7;
+			margin: 0px;
+			font-size: 24pt;
+			text-align: center;
+			position: relative;
+			top: 25%;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="header">	
+		<h3>Rent a bike</h3>
+		<!--<p class="image3">
+				<img id="img1" src="logo_cyclist.gif" width=100" height="100"  alt="bike"/>
+			</p>-->
+	</div>
+	</div>
+	
+	<div id="navbar">	
+		<ul>
+			<li><a href="http://127.0.0.1:8080/start_page/"">Home</a></li>
+			<li><a href="http://127.0.0.1:8080/about/">About</a></li>
+			<li><a href="#bike_stations">Bike stations</a></li>
+			<li><a href="http://127.0.0.1:8080/contacts/">Contacts</a></li>
+			<li><a href="http://127.0.0.1:8080/founders/">Founders</a></li>
+			<li><a href="http://127.0.0.1:8080/signup/">SignUp</a></li>
+			<li><a href="http://127.0.0.1:8080/login_page/">Login</a></li>
+		</ul>
+	</div>
+	<div id="gif_area">	
+		<p class="image1">
+				<img id="img1" src="logo_cyclist.gif" width=100" height="100"  alt="bike"/>
+			</p>
+	</div>
+	<article class="main">
+		<h1>Contacts</h1>
+		<ul >
+            <li>Phone: +359 123 456 789 </li>
+			<li>email: <a href="">rent_bike@gmail.com </a> <span class="smallLetters1"></span> </li>
+			<li>Address: Sofia, Buldevard Bulgaria, 53 </li>			
+		</ul>
+		<p class="map1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.7719048788517!2d23.286969014757492!3d42.666188779167534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa84ea26a71143%3A0x221572704cc4c258!2z0KHQvtGE0LjRjywgQnVsZXZhcmQgIkJ1bGdhcmlhIiA1MywgMTQwNCBNb3RvcGlzdGEsIFNvZmlh!5e0!3m2!1sen!2sbg!4v1559570788406!5m2!1sen!2sbg" 
+		width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+	</article>
+
+</body>
+
+
+</html>
+{% endblock %}

@@ -1,0 +1,164 @@
+
+<!doctype html>
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title> Rent a bike </title>
+	<style>
+		body{
+			color: black;
+			background-color: #FFFFFF;
+			font-family: verdana;
+			width: 1000px;
+			font-size:15px;
+			margin:auto;
+			position:relative;
+		}
+		.image1{
+			margin-left:200px;	 
+		}
+		
+		#gif_area{
+			margin: 10px;
+			height:40px;
+			margin-left:200px;
+			padding: 5px;
+
+		}
+		.map1{
+			margin-left:200px;	 
+		}
+		
+		#header{
+			background-color: #557A95;
+			margin: 10px;
+			height:90px;
+			border-radius: 5px;
+		}
+		#navbar ul{
+			padding: 5px;
+			list-style-type: none;
+			text-align:center;
+			background-color:black;
+			margin: 10px;
+			height:20px;
+			border-radius: 5px;
+		}
+		#navbar ul li{
+			display: inline;
+		}
+		#navbar ul li a{
+			text-decoration: none;
+			padding: .2em 1em;
+			color: white;
+			background-color: black;
+		}
+		#navbar ul li a:hover{
+			color: black;
+			background-color: white;
+		}
+		.main{
+			background-color: #CAD3D7;
+			margin-top: 100px;
+			margin-left: 10px;
+			margin-right: 10px;
+			border-radius: 5px;
+			padding: 20px;
+		}
+		h1{
+			font-size: 18pt;
+		}
+		h2{
+			font-size: 14pt;
+			text-align: center;
+		}
+		h3{
+			color: #e5e4d7;
+			margin: 0px;
+			font-size: 24pt;
+			text-align: center;
+			position: relative;
+			top: 25%;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="header">	
+		<h3>Rent a bike</h3>
+	</div>
+	<div id="navbar">	
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="http://127.0.0.1:8080/about/">About</a></li>
+			<li><a href="#bike_stations">Bike stations</a></li>
+			<li><a href="http://127.0.0.1:8080/contacts/">Contacts</a></li>
+			<li><a href="http://127.0.0.1:8080/founders/">Founders</a></li>
+			<li><a href="http://127.0.0.1:8080/signup/">SignUp</a></li>
+			<li><a href="http://127.0.0.1:8080/login_page/">Login</a></li>
+		</ul>
+	</div>
+	<div id="gif_area">	
+		<p class="image1">
+				<img id="img1" src="logo_cyclist.gif" width="150" height="120"  alt="bike"/>
+			</p>
+	</div>
+	<article class="main">
+		<h1>Founders</h1>
+		<h2>Angela Velinova</h2>
+		<p class="image1">
+			<img id="img1" src="f1.jpg" alt="Angela Velinova"/>
+		</p>
+		<p>
+			Angela is a student in the Sofia University, Faculty of mathematics and informatics in Sofia, Bulgaria. Right now she is in 
+			her last (fourth) year of bachelor studies. She has taken part in Programming 101 course with Python provided by HackBulgaria. She has participated
+			in various projects and has developed many useful techinical as well as soft skills. In her free time she likes getting a decent amount of sleeping
+			hours, doing her makeup and going out with her friends. Angela loves all types of dogs as well as small domestic pigs.
+		</p>
+		
+		<h2>Martin Plamenov</h2>
+		<p class="image1">
+			<img id="img1" src="f2.jpg" alt="Martin Plamenov"/>
+		</p>
+		<p>
+			Martin is a student in the Sofia University, Faculty of mathematics and informatics in Sofia, Bulgaria. Right now he is in 
+			his second year of bachelor studies. Last year he took part in a Java introduction course. In addition to that he is a member of the Programming 101 course with Python provided by HackBulgaria.
+			In his free time he is in pursuit of a career in the sports industry. He wants to transofrm Bulgarian football and is successfully approachig
+			Ronaldo's level of perfection. Martin is also trying to popularize a British show which unfortunately is not well known in Bulgaria. For more
+			infromation about it you can contact him.
+		</p>
+		
+		<h2>Zahari Tudjarov</h2>
+		<p class="image1">
+			<img id="img1" src="f3.jpg" alt="Zahari Tudjarov"/>
+		</p>
+		<p>
+			Zahari is a student in the Sofia University, Faculty of mathematics and informatics in Sofia, Bulgaria. Right now he is in 
+			his second year of bachelor studies. His main goal is to become an expert in celestial mechanics by participating in an intensive course in the 
+			Faculty of mathematics and infromatics. Zahari is also a member of the Programming 101 course with Python provided by HackBulgaria. When he has spare
+			time Zahari likes watching anime. He is really keen on turtles and dogs. In addition to that Zahari is a generous person - he loves making people
+			happy by giving them cocoa nuts.
+			
+		</p>
+		
+		<h2>Elena Raodycheva</h2>
+		<p class="image1">
+			<img id="img1" src="f4.jpg" alt="Zahari Tudjarov"/>
+		</p>
+		<p>
+			Elena is a student in the Sofia University, Faculty of mathematics and informatics in Sofia, Bulgaria. Right now she is in 
+			her last (fourth) year of bachelor studies. She has taken part in Programming 101 course with Python provided by HackBulgaria. In her free time she likes reading books, travelling 
+			and going out with her friends.
+		</p>
+	</article>
+	
+
+</body>
+
+
+</html>
+{% endblock %}

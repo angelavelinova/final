@@ -1,0 +1,17 @@
+ <!--This is a base hmtl page which means it is used for inherance and the code inside of {block content ,{%endblock}}
+ is replaced with the  code in the same tags of the current html page-->
+
+ <!doctype html>
+ <hmtl>
+ 	<head>
+ 		<title>Bike rental application</title>
+ 	</head>
+ 	<body>
+ 	<!-- From django framework syntax -->	
+   {% include 'navbar.html' %}
+ 	{% block content %}
+ 	Replaced content
+ 	{% endblock %}
+
+ 	</body>
+ </hmtl>

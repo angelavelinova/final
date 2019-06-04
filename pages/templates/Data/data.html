@@ -1,0 +1,100 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title> Rent a bike </title>
+	<style>
+		body{
+			color: black;
+			background-color: #9c9f84;
+			font-family: verdana;
+			width: 1000px;
+			font-size:15px;
+			margin:auto;
+			position:relative;
+		}
+		.image1{
+			margin-left:200px;	 
+		}
+		.map1{
+			margin-left:200px;	 
+		}
+		
+		#header{
+			background-color: #5c755e;
+			margin: 10px;
+			height:90px;
+			border-radius: 5px;
+		}
+		#navbar ul{
+			padding: 5px;
+			list-style-type: none;
+			text-align:center;
+			background-color:black;
+			margin: 10px;
+			height:20px;
+			border-radius: 5px;
+		}
+		#navbar ul li{
+			display: inline;
+		}
+		#navbar ul li a{
+			text-decoration: none;
+			padding: .2em 1em;
+			color: white;
+			background-color: black;
+		}
+		#navbar ul li a:hover{
+			color: black;
+			background-color: white;
+		}
+		.main{
+			background-color: #e5e4d7;
+			margin: 10px;
+			border-radius: 5px;
+			padding: 20px;
+		}
+		h1{
+			font-size: 18pt;
+		}
+		h3{
+			color: #e5e4d7;
+			margin: 0px;
+			font-size: 24pt;
+			text-align: center;
+			position: relative;
+			top: 25%;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+<!--<button class="btn" type="submit"><a href="Profile/profile/<str:username>">Back</a></button>-->
+	<div id="header">	
+		<h3>Rent a bike</h3>
+	</div>
+	<div id="navbar">	
+		<ul>
+			<li><a href="http://127.0.0.1:8080/data/">Data</a></li>
+			<li><a href="http://127.0.0.1:8080/marshrutes/">My marshrutes </a></li>
+			<li><a href="http://127.0.0.1:8080/login_page/">Logout</a></li>
+		</ul>
+	</div>
+
+	<form method="post">
+		{%csrf_token%}
+
+		<ul>
+			<li>Username: {{user.username}}</li>
+			<li>First name: {{form.first_name}}</li>
+			<li>Last name: {{form.last_name}}</li>
+			<li>Email: {{form.email}}</li>
+		</ul>
+
+		<button class="btn" type="submit">Submit changes</button>
+	</form>
+</body>
+
+
+</html>

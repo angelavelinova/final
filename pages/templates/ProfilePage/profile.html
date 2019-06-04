@@ -1,0 +1,113 @@
+
+<!doctype html>
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title> Rent a bike </title>
+	<style>
+		body{
+			color: black;
+			background-color: #FFFFFF;
+			font-family: verdana;
+			width: 1000px;
+			font-size:15px;
+			margin:auto;
+			position:relative;
+		}
+		.image1{
+			margin-left:200px;	 
+		}
+		#gif_area{
+			margin: 10px;
+			height:20px;
+			margin-left:200px;
+			padding: 5px;
+
+		}
+		.map1{
+			margin-left:200px;	 
+		}
+		
+		#header{
+			background-color: #557A95;
+			margin: 10px;
+			height:90px;
+			border-radius: 5px;
+		}
+		#navbar ul{
+			padding: 5px;
+			list-style-type: none;
+			text-align:center;
+			background-color:black;
+			margin: 10px;
+			height:20px;
+			border-radius: 5px;
+		}
+		#navbar ul li{
+			display: inline;
+		}
+		#navbar ul li a{
+			text-decoration: none;
+			padding: .2em 1em;
+			color: white;
+			background-color: black;
+		}
+		#navbar ul li a:hover{
+			color: black;
+			background-color: white;
+		}
+		.main{
+			background-color: #83AAC7;
+			margin-top: 100px;
+			margin-left: 10px;
+			margin-right: 10px;
+			border-radius: 5px;
+			padding: 20px;
+		}
+		h1{
+			font-size: 18pt;
+		}
+		h3{
+			color: #e5e4d7;
+			margin: 0px;
+			font-size: 24pt;
+			text-align: center;
+			position: relative;
+			top: 25%;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="header">	
+		<h3>Rent a bike</h3>
+	</div>
+	<div id="navbar">	
+		<ul>
+			<li><a href="personal_information.html">Personal information</a></li>
+			<li><a href="routes.html">Routes</a></li>
+			<li><a href="">LogOut</a></li>
+		</ul>
+	</div>
+	<div id="gif_area">	
+		<p class="image1">
+				<img id="img1" src="logo_cyclist.gif" width=100" height="100"  alt="bike"/>
+			</p>
+	</div>
+	<article class="main">
+		<h1>Personal information</h1>
+		<p>
+			sth
+		</p>
+		
+	</article>
+
+</body>
+
+
+</html>
+{% endblock %}

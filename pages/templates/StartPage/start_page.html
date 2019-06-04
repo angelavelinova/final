@@ -1,0 +1,118 @@
+
+<!doctype html>
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title> Rent a bike </title>
+	<style>
+		body{
+			color: black;
+			background-color: #FFFFFF;
+			font-family: verdana;
+			width: 1000px;
+			font-size:15px;
+			margin:auto;
+			position:relative;
+		}
+		.image1{
+			margin-left:200px;	 
+		}
+		.map1{
+			margin-left:200px;	 
+		}
+		
+		#header{
+			background-color: #557A95;
+			margin: 10px;
+			height:90px;
+			border-radius: 5px;
+		}
+		#navbar ul{
+			padding: 5px;
+			list-style-type: none;
+			text-align:center;
+			background-color:black;
+			margin: 10px;
+			height:20px;
+			border-radius: 5px;
+		}
+		#navbar ul li{
+			display: inline;
+		}
+		#navbar ul li a{
+			text-decoration: none;
+			padding: .2em 1em;
+			color: white;
+			background-color: black;
+		}
+		#navbar ul li a:hover{
+			color: black;
+			background-color: white;
+		}
+		.main{
+			background-color: #CAD3D7;
+			margin: 10px;
+			border-radius: 5px;
+			padding: 20px;
+		}
+		h1{
+			font-size: 18pt;
+		}
+		h3{
+			color: #e5e4d7;
+			margin: 0px;
+			font-size: 24pt;
+			text-align: center;
+			position: relative;
+			top: 25%;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="header">	
+		<h3>Rent a bike</h3>
+	</div>
+	<div id="navbar">	
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="http://127.0.0.1:8080/about/">About</a></li>
+			<li><a href="#bike_stations">Bike stations</a></li>
+			<li><a href="http://127.0.0.1:8080/contacts/">Contacts</a></li>
+			<li><a href="http://127.0.0.1:8080/founders/">Founders</a></li>
+			<li><a href="http://127.0.0.1:8080/signup/">SignUp</a></li>
+			<li><a href="http://127.0.0.1:8080/login_page/">Login</a></li>
+		</ul>
+	</div>
+	<a id="home"></a>
+	<p class="image1">
+			<img id="img1" src="logo_cyclist.gif" alt="bike"/>
+		</p>
+	<article class="main">
+		<h1>Home</h1>
+		
+		<p>
+			Why you should ride a bike? Riding your bicycle, or cycling, has countless benefits. These can range from personal, to economic, to social, to environmental and more.
+			Cycling is a good form of exercise. It is also a simple, eco-friendly transportation option.
+			The more cars we can get off the road, the better it will be for the environment. Cycling requires no gasoline and, therefore,
+			no harmful vehicle emissions or smog are released into the air when a person is riding his or her bicycle.
+		</p>
+		
+	</article>
+	<a id="bike_stations"></a>
+	<article class="main">
+		<h1>Bike stations in Sofia</h1>
+		<p>
+			We present you a map of the bike stations in Sofia
+		</p>
+		<p class="map1"><iframe src="https://www.google.com/maps/d/embed?mid=1LGpmeLjV-6wnrJ3FFtIuMSrgiOaG0waC" width="640" height="480"></iframe></p>
+	</article>
+</body>
+
+
+</html>
+{% endblock %}
